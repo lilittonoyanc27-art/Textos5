@@ -1,0 +1,6 @@
+{
+  "name": "Spanish Quiz and Duel Arena",
+  "description": "An interactive Spanish quiz and 2-player educational arena for Armenian speakers, covering everyday phrases and grammar exceptions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

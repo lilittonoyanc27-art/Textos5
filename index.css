@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Armenian:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Armenian", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", "Noto Sans Armenian", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-accent: #DE212C;
+  --color-accent-light: #FFC400;
+  --color-text: #1F2937;
+  --color-text-muted: #6B7280;
+  --color-success: #10B981;
+}
+
+@layer utilities {
+  .shimmer-text {
+    background: linear-gradient(to right, #DE212C, #FFC400, #10B981, #DE212C);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 4s linear infinite;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
